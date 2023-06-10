@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Coffee Survey</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" type="text/css" />
+    </head>
+
+    <body>
+        <header>
+            <h1>All About Coffee</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="roasting.html">Roasting</a></li>
+                    <li><a href="grinding.html">Grinding</a></li>
+                    <li><a href="brewing.html">Brewing</a></li>
+                    <li><a href="drinks.html">Drinks</a></li>
+                    <li><a href="survey.html">Coffee Survey</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h1>Coffee Survey</h1>
+        <aside>
+            <figure>
+                <img src="images/espresso.jpg" alt="a espresso cup" width="200" height="169"/>
+            </figure>
+            <p style="text-align: left; font-family: 'Courier New', Courier, monospace; font-weight: light;">Espresso is a concentrated form of coffee served in small, strong shots and is the base for many coffee drinks. It's made from the same beans as coffee but is stronger, thicker, and higher in caffeine. However, because espresso is typically served in smaller servings than coffee, it has less caffeine per serving.</p>
+        </aside>
+        <form action="coffee-survey.php" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Your Name</label><br/>
+                <input type="text" name="name" id="name" size="40" required/><br/>
+                <label for="email">Email Address</label><br/>
+                <input type="email" name="email" id="email" placeholder="Enter a valid email address" size="40" required/><br/>
+            </fieldset>
+            <fieldset>
+                <legend>Your Coffee Preferences</legend>
+                Tell us your coffee preparation methods.<br/>
+                <textarea name="method" id="method" cols="40" rows="6"></textarea><br/>
+                <label for="grind">Do you grind your own beans?</label><br/>
+                <input type="radio" name="grind" id="grind" value="yes"/>yes
+                <input type="radio" name="grind" id="grind" value="no"/>no
+                <br/><br/>
+                <label for="drink">How do you drink your coffee?</label><br/>
+                <input type="checkbox" name="drink" id="drink" value="sugar"/>with sugar
+                <input type="checkbox" name="drink" id="drink" value="cream"/>with cream
+                <br/><br/>
+                What is your favorite coffee drink?<br/>
+                <select name="fav" id="fav">
+                    <option value="">please select a drink</option>
+                    <option value="drip">drip coffee</option>
+                    <option value="french">french press</option>
+                    <option value="espresso">espresso</option>
+                    <option value="latte">latte</option>
+                    <option value="flavored">flavored</option>
+                </select><br/>
+            </fieldset>
+        </form>
+
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="roasting.html">Roasting</a></li>
+                    <li><a href="grinding.html">Grinding</a></li>
+                    <li><a href="brewing.html">Brewing</a></li>
+                    <li><a href="drinks.html">Drinks</a></li>
+                    <li><a href="survey.html">Coffee Survey</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+</html>
